@@ -3,40 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>FUERZA Y VIDA SANTIAGO </title>
+    <title>Portal CreacionesCelin ✨</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <header>
-        <h1>🏋️ FUERZA Y VIDA GYM</h1>
+        <img src="img/IMG-20250515-WA0009.jpg" alt="Logo de Foami Dreams"> 
+        <h1>CREACIONES CELIN ✨</h1>
     </header>
 
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Socios</a></li>
-            <li><a href="#">Clases</a></li>
-            <li><a href="#">Estadísticas</a></li>
-        </ul>
-    </nav>
+   <nav>
+    <ul>
+        <li><button onclick="mostrarSeccion('inicio')">Inicio</button></li>
+        <li><button onclick="mostrarSeccion('sobreNosotros')">Sobre Nosotros</button></li>
+        <li><button onclick="mostrarSeccion('catalogo')">Catálogo</button></li>
+        <li><button onclick="mostrarSeccion('contacto')">Contacto</button></li>
+    </ul>
+</nav>
 
-    <section class="container">
-        <h2>Bienvenido al Sistema de Gestión deL Gym FUERZA Y VIDA </h2>
-        <button onclick="mostrarFormulario()">Registrar Socio</button>
+<section id="contenido">
+    <h2>💖 CREACIONES CELIN 💖</h2>
+    <p>¡Tienda online dedicada a la venta de manualidades creativas totalmente personalizadas !🌟 </p>
+</section>
 
-        <div id="formulario" style="display:none;">
-            <h3>Registro de Socios</h3>
-            <input type="text" id="nombre" placeholder="Nombre">
-            <input type="number" id="edad" placeholder="Edad">
-            <input type="text" id="tipoMembresia" placeholder="Tipo de Membresía">
-            <button onclick="registrarSocio()">Registrar</button>
+    <section class="catalogo">
+        <h2>✨ Nuestro Catálogo ✨</h2>
+        <div class="imagenes">
+            <img src="img/IMG-20250514-WA0220.jpg" alt="Diseño 1">
+            <img src="img/IMG-20250514-WA0240.jpg" alt="Diseño 2">
+            <img src="img/IMG-20250515-WA0014.jpg" alt="Diseño 3">
+            <img src="img/IMG-20250515-WA0170.jpg" alt="Diseño 4">
         </div>
-
-        <div id="listaSocios">
-            <h3>Socios Registrados</h3>
-        </div>
-    </section>
+    </section>     
+      
+<footer>
+    <p>🌸 Creaciones Celin - CREANDO MOMENTOS MAGICOS CON EL ARTE 🌸</p>
+</footer>
 
     <script src="script.js"></script>
 </body>

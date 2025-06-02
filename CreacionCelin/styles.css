@@ -1,56 +1,130 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Comic Sans MS', cursive;
+    background: linear-gradient(135deg, #ffaad4, #ffc4e1);
+    color: #ff0080;
     text-align: center;
-    background: linear-gradient(135deg, #1e1e2f, #ff4081);
-    color: white;
-    animation: fadeIn 1.5s ease-in-out;
-}
-
-@keyframes fadeIn {
-    from { opacity: 0; transform: translateY(-20px); }
-    to { opacity: 1; transform: translateY(0); }
 }
 
 header {
-    background-color: #ff4081;
-    padding: 15px;
-    font-size: 24px;
-    animation: slideDown 1.2s ease-out;
+    background-color: #ff69b4;
+    padding: 250px;
+    font-size: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px #ff0080;
 }
 
-@keyframes slideDown {
-    from { transform: translateY(-50px); opacity: 0; }
-    to { transform: translateY(0); opacity: 1; }
+nav ul {
+    list-style: none;
+    padding: 0;
 }
 
-button {
-    padding: 10px 20px;
-    border: none;
-    background-color: #ff4081;
+nav ul li {
+    display: inline;
+    margin: 10px;
+}
+
+nav ul li a {
     color: white;
-    font-size: 16px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.about, .catalogo {
+    padding: 20px;
+    background-color: #fff0f5;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(255, 0, 128, 0.3);
+    margin: 20px auto;
+    width: 80%;
+}
+
+.catalogo .imagenes img {
+    width: 190px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(255, 0, 128, 0.5);
+}
+
+footer {
+    background-color: #ff69b4;
+    padding: 10px;
+    color: white;
+    border-radius: 10px;
+    margin-top: 20px;
+}
+body {
+    font-family: 'Comic Sans MS', cursive;
+    background: url('ruta-del-fondo-kawaii.png') no-repeat center center fixed;
+    background-size: cover;
+    color: #ff0080;
+    text-align: center;
+}
+
+header {
+    background-color: #ff69b4;
+    padding: 20px;
+    font-size: 24px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #ff0080;
+    position: relative;
+    overflow: hidden;
+}
+
+header::after {
+    content: "✨";
+    position: absolute;
+    right: 10px;
+    bottom: 5px;
+    font-size: 30px;
+}
+
+nav ul li a {
+    font-size: 20px;
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffaad4;
+    text-shadow: 0px 0px 5px #ff69b4;
+}
+
+.about, .catalogo {
+    background: rgba(255, 240, 245, 0.9);
+    border-radius: 20px;
+    padding: 25px;
+    box-shadow: 0px 10px 20px rgba(255, 0, 128, 0.5);
+}
+
+.catalogo .imagenes img {
+    border-radius: 20px;
+    transition: transform 0.5s, box-shadow 0.5s;
+}
+
+.catalogo .imagenes img:hover {
+    transform: scale(1.2);
+    box-shadow: 0px 10px 20px rgba(255, 105, 180, 0.8);
+}
+
+footer {
+    background-color: #ff69b4;
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #ff69b4;
+    color: white;
+    font-size: 18px;
     cursor: pointer;
-    transition: transform 0.3s, background-color 0.3s;
+    border-radius: 10px;
+    transition: 0.3s;
 }
 
 button:hover {
-    background-color: #ff006f;
+    background-color: #ff0080;
     transform: scale(1.1);
-}
-
-.container {
-    padding: 20px;
-}
-
-input {
-    display: block;
-    margin: 10px auto;
-    padding: 10px;
-    width: 200px;
-    border-radius: 5px;
-    transition: box-shadow 0.3s;
-}
-
-input:focus {
-    box-shadow: 0 0 10px #ff4081;
 }
